@@ -1,0 +1,9 @@
+namespace webview2Test
+{
+    [bindable]
+    [default_interface]
+    runtimeclass Browser : Microsoft.UI.Xaml.Controls.WebView2
+    {
+        Browser();
+    }
+}
