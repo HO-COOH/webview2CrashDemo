@@ -11,6 +11,6 @@
     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
         <Button x:Name="myButton" Click="ClickHandler">Click Me</Button>
         <!--<muxc:WebView2 x:Name="Browser" Width="500" Height="500" Loaded="WebView2_Loaded"/>-->
-        <local:Browser Width="500" Height="500"/>
+        <local:Browser Width="500" Height="500" Source="https://google.com" CoreWebView2Initialized="Browser_CoreWebView2Initialized"/>
     </StackPanel>
 </Page>

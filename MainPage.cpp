@@ -28,3 +28,9 @@ namespace winrt::webview2Test::implementation
 //{
 //    co_return;
 //}
+
+
+void winrt::webview2Test::implementation::MainPage::Browser_CoreWebView2Initialized(winrt::Microsoft::UI::Xaml::Controls::WebView2 const& sender, winrt::Microsoft::UI::Xaml::Controls::CoreWebView2InitializedEventArgs const& args)
+{
+    sender.CoreWebView2().OpenDevToolsWindow();
+}
